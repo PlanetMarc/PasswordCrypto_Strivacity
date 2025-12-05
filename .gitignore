@@ -1,0 +1,9 @@
+# Exclude actual crypto config files (contains sensitive keys)
+crypto.config.json
+
+# .NET build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
