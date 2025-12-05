@@ -115,14 +115,20 @@ class PasswordCrypto
     /// <returns>Encryption key or null if not found</returns>
     static string GetKey(string[] args)
     {
-        // If key provided as argument (3 args total), use it
+        // Always try config file first
+        string configKey = LoadKeyFromConfig();
+        if (configKey != null)
+        {
+            return configKey;
+        }
+
+        // Fall back to command line argument if config key not available
         if (args.Length >= 3)
         {
             return args[1];
         }
 
-        // Otherwise, try to load from config file
-        return LoadKeyFromConfig();
+        return null;
     }
 
     /// <summary>
