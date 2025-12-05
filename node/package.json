@@ -1,0 +1,22 @@
+{
+  "name": "passwordcrypto",
+  "version": "1.0.0",
+  "description": "AES-256 Password Encryption Utility - Compatible with C# version",
+  "main": "passwordCrypto.js",
+  "scripts": {
+    "genkey": "node passwordCrypto.js genkey",
+    "encrypt": "node passwordCrypto.js encrypt",
+    "decrypt": "node passwordCrypto.js decrypt"
+  },
+  "keywords": [
+    "encryption",
+    "aes",
+    "password",
+    "crypto"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
