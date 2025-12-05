@@ -1,5 +1,7 @@
 # Exclude actual crypto config files (contains sensitive keys)
 crypto.config.json
+node/crypto.config.json
+crypto.config.json.sample
 
 # .NET build outputs
 bin/
